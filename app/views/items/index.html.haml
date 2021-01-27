@@ -2,4 +2,4 @@
   %p js-advanced
 .main 
   =form_with html: {class: "form"}do |f|
-    = f.collection_select :category_id,@categories, :id, :name,{include_blank: "---"},{class:"form-pull-down select-category"}
+    = f.collection_select :category_id,[], :id, :name,{include_blank: "---"},{class:"form-pull-down select-category"}

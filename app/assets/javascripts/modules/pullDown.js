@@ -1,7 +1,6 @@
 $(function(){
 
   function buildForm(categories){
-
     let options='';
     categories.forEach(function (category) { 
       options += `
@@ -21,14 +20,15 @@ $(function(){
 
 
 //changeイベント設定箇所
-  $('.form').on('change','.select-category',function(){
+  $('.form').on('change','####',function(){
+    alert('change!')
     $(this).nextAll().remove()　//選択された要素より下のformを一度リセット
     const category_id=$(this).val() //選択されたidを取得
 
   //Ajaxのリクエストを記述
     $.ajax({
       type: "GET",
-      url: "/api/items/category",
+      url: "####",
       data: {category_id: category_id },
       dataType: 'json'
     })

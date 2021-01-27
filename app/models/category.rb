@@ -1,4 +1,4 @@
 class Category < ApplicationRecord
-
-  has_ancestry
+  #追加
+ 
 end

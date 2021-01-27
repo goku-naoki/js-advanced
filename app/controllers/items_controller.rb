@@ -5,6 +5,8 @@ class ItemsController < ApplicationController
     
   end
 
+  #get_categoryアクション追加
+
   
 end
 

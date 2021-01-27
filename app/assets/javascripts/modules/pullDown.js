@@ -4,7 +4,7 @@ $(function(){
     let options='';
     categories.forEach(function (category) { 
       options += `
-                  <option value="${category.id}">${category.name}</option>
+                  <option value="${category.name}">${category.name}</option>
                  `;
     });
 
